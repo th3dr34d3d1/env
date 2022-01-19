@@ -116,3 +116,5 @@ if ! shopt -oq posix; then
   fi
 fi
 export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
+
+alias sail="vendor/bin/sail"
